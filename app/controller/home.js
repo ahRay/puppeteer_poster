@@ -29,7 +29,6 @@ class HomeController extends Controller {
 
     try {
       fs.accessSync(posterImage, fs.constants.F_OK);
-      console.log(posterImage)
       ctx.set('content-type','image/jpeg')
       ctx.body = fs.createReadStream(posterImage);
       return;
@@ -37,8 +36,6 @@ class HomeController extends Controller {
       console.error(err);
       console.error('no access!');
     }
-
-    console.log(111111111)
 
     // 避免重复启动浏览器
     const getWSAddress = ()=>new Promise(resolve => {
