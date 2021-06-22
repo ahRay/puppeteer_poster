@@ -1,7 +1,8 @@
+/poster_image/*
+/app/public/html/*
+!.gitkeep
 /run
-/poster_image
 /logs
 /node_modules
-/app/public/html
 wsa.txt
 .DS_Store
