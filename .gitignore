@@ -3,3 +3,4 @@
 /node_modules
 /app/public/html
 wsa.txt
+.DS_Store
